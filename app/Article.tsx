@@ -18,7 +18,7 @@ function Article({article}: Props) {
             <div className="flex-1 flex flex-col p-5">
                 <h2 className=" font-serif text-xl font-bold">{article.title}</h2>
                 <section className="mt-2 flex-1">
-                    <p className="text-xs line-clamp-2">{article.description}</p>
+                    <p className="text-xs line-clamp-10">{article.description}</p>
                 </section>
                 <footer className="text-xs text-right ml-auto flex space-x-1 pt-5 italic text-gray-500">
                     <p>{article.author}</p>
@@ -26,7 +26,11 @@ function Article({article}: Props) {
                 </footer>
             </div>
             <div className="flex justify-evenly">
-                <ReadMore article={article} />
+                <a 
+                className="bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 rounded-md px-2 py-1 hover:bg-slate-300 dark:hover:bg-slate-600 transition-all duration-500 ease-out"
+                href={article.url as string}>
+                    Read the full article
+                </a>
             </div>
         </div>
     </article>
