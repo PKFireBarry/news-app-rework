@@ -12,10 +12,10 @@ const fectchNews = async (
         query myQuery {
                 myQuery(
                 access_key: "1b69dc5b0f360dd2301c138e50c5997e"
-                countries: "us,ca,gb,au"
-                categories: "business,entertainment,general,health,science,sports,technology"
-                sort: "popularity"
-                sources: "cnn,bbc-news,abc-news,google-news,fox-news,msnbc,al-jazeera-english,the-wall-street-journal,the-new-york-times,the-washington-post,cbc-news,usa-today,cbs-news,fox-news,abc-news,al-jazeera-english,ars-technica,buzzfeed,cbs-news,cnn,engadget,entertainment-weekly,espn,financial-post,fortune,fox-news,fox-sports,google-news,ign,mtv-news,national-geographic,nbc-news,newsweek,new-york-magazine,polygon,recode,reddit-r-all,reuters,techcrunch,the-economist,the-huffington-post,the-new-york-times,the-next-web,the-verge,the-wall-street-journal,the-washington-post,the-washington-times,time,usa-today,wired"
+                countries: "us,ca,gb,au,nz"
+                categories: "general,business,entertainment,health,science,sports,technology"
+                sort: "published_desc"
+                sources: "cnn,bbc-news,abc-news,google-news,fox-news,msnbc,al-jazeera-english,the-wall-street-journal,the-new-york-times,the-washington-post,cbc-news,usa-today,cbs-news,fox-news,abc-news,al-jazeera-english,ars-technica,buzzfeed,cbs-news,cnn,engadget,entertainment-weekly,espn,financial-post,fortune,fox-news,fox-sports,google-news,ign,mtv-news,national-geographic,nbc-news,newsweek,new-york-magazine,polygon,recode,reddit-r-all,reuters,techcrunch,the-economist,the-huffington-post,the-new-york-times,the-next-web,the-verge,the-wall-street-journal,the-washington-post,the-washington-times,time,usa-today,wired,yahoo-news,vice-news,mtv-news,nationalpost"
                 limit: "100"
                 ) {
                 data {

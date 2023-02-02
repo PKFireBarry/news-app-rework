@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation"
 
 type Props = {
-    article: Article;
+    article: DataEntry;
 }
 
 function ReadMore( {article}: Props ) {
