@@ -2,7 +2,7 @@
 
 
 type Props = {
-    article: DataEntry;
+    
 }
 
 function ArticlePage({ article }: Props) {
