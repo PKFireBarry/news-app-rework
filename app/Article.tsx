@@ -2,7 +2,7 @@ import ReadMore from "./ReadMore"
 
 
 type Props = {
-    article: typeof Article;
+    article: DataEntry;
     key: string;
 }
 
@@ -11,8 +11,8 @@ function Article({article, key}: Props) {
     <article className="bg-slate-100 dark:bg-slate-800 flex flex-col rounded-lg shadow-sm hover:scale-110 hover:shadow-lg hover:bg-slate-200 transition-all duration-500 ease-out">
         {article.image && (
                 <img 
-                src={article.image} 
-                alt={article.title} 
+                src={article.image as string} 
+                alt={article.title as string} 
                 className="h-56 w-full object-cover rounded-t-md"
                 />)}
         <div className="flex-1 flex flex-col">
