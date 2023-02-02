@@ -3,8 +3,7 @@ import { categories } from "../constant";
 import sortNewsByImage from "./sortNewsByImage";
 
 const fectchNews = async (
-    Category?: Category | string,
-    isDynamic?: boolean,
+    Category?: Category | string
     ) => {
     //graphql query
     const query = gql`
@@ -40,8 +39,6 @@ const fectchNews = async (
     //fetch function to get data from api
     const res = await fetch('https://monthey.stepzen.net/graphql/news/__graphql', {
         method: 'POST', 
-        cache: isDynamic ? 'no-cache' : 'default',
-        next: isDynamic ? { revalidate: 0 } : { revalidate: 120 },
         headers: {
             'Content-Type': 'application/json',
             Authorization: `Apikey ${process.env.STEPZEN_API_KEY}`,
