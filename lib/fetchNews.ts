@@ -3,7 +3,7 @@ import { categories } from "../constant";
 import sortNewsByImage from "./sortNewsByImage";
 
 const fectchNews = async (
-    Category?: Category | string
+    Category: Category | string
     ) => {
     //graphql query
     const query = gql`
@@ -47,7 +47,6 @@ const fectchNews = async (
             query, 
             variables: { 
                 access_key: process.env.MEDIASTACK_API_KEY, 
-                categories: Category, 
                     },
                 }),
             }
