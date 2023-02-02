@@ -2,15 +2,15 @@
 
 
 type Props = {
-    searchParams: DataEntry;
+    article: DataEntry;
 }
 
-function ArticlePage({ searchParams }: Props) {
+function ArticlePage({ article }: Props) {
 
 
 
-    const DataEntry = searchParams;
-    const article = DataEntry;
+
+
 
 return (
     <article>
