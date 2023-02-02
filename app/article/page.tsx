@@ -1,23 +1,18 @@
-import React from 'react'
-import { notFound } from 'next/navigation'
+
 
 
 type Props = {
-    searchParams?: DataEntry;
+    searchParams: DataEntry;
 }
 
 function ArticlePage({ searchParams }: Props) {
 
-    if (
-        (searchParams && Object.entries(searchParams).length === 0) ||
-        !searchParams
-    ) {
-        return notFound();
-    }
 
-    const article: DataEntry = searchParams;
 
-  return (
+    const DataEntry = searchParams;
+    const article = DataEntry;
+
+return (
     <article>
         <section className='flex flex-col rounded-lg lg:flex-row pb-24 px-0 lg:px-10'>
             {article.image && (
@@ -33,6 +28,9 @@ function ArticlePage({ searchParams }: Props) {
                 </h1>
                 <div>
                 <div className='flex divide-x-2 space-x-4'>
+                    <p className='text-sm font-medium text-gray-900 dark:text-gray-100'>
+                        {article.author}
+                    </p>
                     <p className='text-sm font-medium text-gray-900 dark:text-gray-100'>
                     Source: {article.source}
                     </p>

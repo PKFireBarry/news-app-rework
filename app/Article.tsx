@@ -3,7 +3,6 @@ import ReadMore from "./ReadMore"
 
 type Props = {
     article: DataEntry;
-    key: string;
 }
 
 function Article({article}: Props) {
@@ -26,7 +25,7 @@ function Article({article}: Props) {
                     <p>{article.published_at}</p>
                 </footer>
             </div>
-            <div className="flex">
+            <div className="flex justify-evenly">
                 <ReadMore article={article} />
             </div>
         </div>
