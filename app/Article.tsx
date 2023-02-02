@@ -6,7 +6,7 @@ type Props = {
     key: string;
 }
 
-function Article({article, key}: Props) {
+function Article({article}: Props) {
   return (
     <article className="bg-slate-100 dark:bg-slate-800 flex flex-col rounded-lg shadow-sm hover:scale-110 hover:shadow-lg hover:bg-slate-200 transition-all duration-500 ease-out">
         {article.image && (

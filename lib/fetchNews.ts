@@ -4,8 +4,7 @@ import sortNewsByImage from "./sortNewsByImage";
 
 const fectchNews = async (
     Category?: Category | string,
-    keyword?: string,
-    isDynamic?: boolean 
+    isDynamic?: boolean,
     ) => {
     //graphql query
     const query = gql`
@@ -52,7 +51,6 @@ const fectchNews = async (
             variables: { 
                 access_key: process.env.MEDIASTACK_API_KEY, 
                 categories: Category, 
-                keyword: keyword 
                     },
                 }),
             }
