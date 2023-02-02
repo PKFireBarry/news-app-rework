@@ -53,7 +53,7 @@ const fectchNews = async (
             }
         );
         console.log(
-            "Loading data from API for categories:",
+            "Loading data from API for the categories:",
             Category,
         );
 
@@ -62,8 +62,8 @@ const fectchNews = async (
 
 
 //sort function to sort by images or not
-const news = sortNewsByImage(newsResponse.data.myQuery);
 
+const news = sortNewsByImage(newsResponse.data.myQuery);
 
 //return data
 return news;
