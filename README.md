@@ -18,8 +18,8 @@ One of the key features of this platform is its integration with MediaStack and 
 - After deciding to read the article you can click "read more" and will be taken to the site that the article is hosted on.
 
 ## Features
-- A wide array of sources for articles using the Mediastack API like Associated Pres, Fox, 
-- Dark and light mode for optimal viewing 
+- A wide array of sources for articles using the Mediastack API like Associated Pres, Fox, and more!
+- Dark and light modes for optimal viewing 
 - fully responsive based on the viewing device 
 
 
